@@ -21,9 +21,9 @@ namespace Weather
         }
     }
 
-    class Weather
+    public class Weather
     {
-        List<Temperature> temperature;
+        public List<Temperature> temperature;
 
         public Weather()
         {
@@ -31,21 +31,21 @@ namespace Weather
         }
     }
 
-    abstract class Temperature
+    public abstract class Temperature
     {
         public string Sun;
         public int Windspeed;
     }
 
-    class Warm : Temperature
+    public class Warm : Temperature
     {
-        public void Sunshine(String Sun)
+        public static void Sunshine(String Sun)
         {
             Sun = "VeryHot";
         }
     }
 
-    class Cold : Temperature
+    public class Cold : Temperature
     {
         public void Wind(int Windspeed)
         {
