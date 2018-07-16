@@ -27,7 +27,7 @@ namespace Weather
 
         public Weather()
         {
-            temperature = List<Temperature>();
+            temperature = new List<Temperature>();
         }
     }
 
@@ -39,7 +39,7 @@ namespace Weather
 
     public class Warm : Temperature
     {
-        public static void Sunshine(String Sun)
+        public void Sunshine(String Sun)
         {
             Sun = "VeryHot";
         }
