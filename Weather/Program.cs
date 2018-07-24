@@ -34,6 +34,11 @@ namespace Weather
         {
             temperature.Add();
         }
+
+        public void RemoveTemperature()
+        {
+            temperature.Remove();
+        }
     }
 
     public abstract class Temperature
