@@ -29,6 +29,11 @@ namespace Weather
         {
             temperature = new List<Temperature>();
         }
+
+        public void AddTemperature()
+        {
+            temperature.Add();
+        }
     }
 
     public abstract class Temperature
