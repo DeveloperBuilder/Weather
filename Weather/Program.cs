@@ -32,12 +32,12 @@ namespace Weather
 
         public void AddTemperature()
         {
-            temperature.Add();
+            return;
         }
 
         public void RemoveTemperature()
         {
-            temperature.Remove();
+            return;
         }
     }
 
