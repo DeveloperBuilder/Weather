@@ -18,6 +18,7 @@ namespace Weather
 
         static void Main(string[] args)
         {
+            var weather = new Weather();
         }
     }
 
