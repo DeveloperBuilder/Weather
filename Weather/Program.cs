@@ -23,7 +23,7 @@ namespace Weather
             weather.AddTemperature(new Cold());
             foreach (var weathers in weather.temperature)
             {
-                Console.WriteLine($"The sun is {weathers.Sun()} and the windspeed is {weathers.Wind()}.");
+                Console.WriteLine($"The sun is {weathers.Sun} and the windspeed is {weathers.Windspeed}.");
             }
             Console.ReadLine();
         }
