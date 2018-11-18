@@ -19,6 +19,13 @@ namespace Weather
         static void Main(string[] args)
         {
             var weather = new Weather();
+            weather.AddTemperature(new Warm());
+            weather.AddTemperature(new Cold());
+            foreach (var weathers in weather.temperature)
+            {
+                Console.WriteLine($"The sun is {weathers.Sun()} and the windspeed is {weathers.Wind()}.");
+            }
+            Console.ReadLine();
         }
     }
 
@@ -31,7 +38,7 @@ namespace Weather
             temperature = new List<Temperature>();
         }
 
-        public void AddTemperature()
+        public void AddTemperature(Temperature temperature)
         {
             return;
         }
@@ -50,7 +57,7 @@ namespace Weather
 
     public class Warm : Temperature
     {
-        public void Sunshine(String Sun)
+        public void Sunshine()
         {
             Sun = "VeryHot";
         }
