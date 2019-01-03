@@ -55,7 +55,7 @@ namespace Weather
         public abstract int Windspeed();
     }
 
-    public class Warm : Temperature
+    public abstract class Warm : Temperature
     {
         public void Sunshine(string Sun)
         {
@@ -63,7 +63,7 @@ namespace Weather
         }
     }
 
-    public class Cold : Temperature
+    public abstract class Cold : Temperature
     {
         public void Wind(int Windspeed)
         {
