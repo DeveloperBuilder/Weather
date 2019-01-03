@@ -23,7 +23,7 @@ namespace Weather
             weather.AddTemperature(new Cold());
             foreach (var weathers in weather.temperature)
             {
-                Console.WriteLine($"The sun is {weathers.Sun} and the windspeed is {weathers.Windspeed}.");
+                Console.WriteLine($"The sun is {weathers.Sun()} and the windspeed is {weathers.Windspeed()}.");
             }
             Console.ReadLine();
         }
@@ -51,13 +51,13 @@ namespace Weather
 
     public abstract class Temperature
     {
-        public string Sun;
-        public int Windspeed;
+        public abstract string Sun();
+        public abstract int Windspeed();
     }
 
     public class Warm : Temperature
     {
-        public void Sunshine()
+        public void Sunshine(string Sun)
         {
             Sun = "VeryHot";
         }
